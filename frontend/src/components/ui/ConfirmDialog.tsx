@@ -24,7 +24,7 @@ export function ConfirmDialog({
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center px-4">
       <div className="absolute inset-0 bg-slate-900/50" onClick={onCancel} />
-      <div className="relative w-full max-w-sm rounded-md bg-white p-6 shadow-2xl">
+      <div className="relative w-full max-w-sm rounded-xl bg-white p-6 shadow-2xl">
         <div className="flex items-start gap-3">
           <div className="flex h-10 w-10 flex-none items-center justify-center rounded-full bg-rose-100">
             <AlertTriangleIcon className="h-5 w-5 text-rose-600" />

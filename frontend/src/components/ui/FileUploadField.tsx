@@ -58,7 +58,7 @@ export function FileUploadField({
         {required && <span className="ml-0.5 text-rose-500">*</span>}
       </label>
       {value ? (
-        <div className="flex items-center justify-between rounded-sm border border-slate-200 bg-slate-50 px-3 py-2 text-sm">
+        <div className="flex items-center justify-between rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm">
           <div className="flex min-w-0 items-center gap-2">
             <FileIcon className="h-4 w-4 flex-none text-slate-400" />
             <span className="truncate text-slate-700">{fileLabel || 'Uploaded file'}</span>
@@ -95,7 +95,7 @@ export function FileUploadField({
           }}
           onDragLeave={() => setDragOver(false)}
           onDrop={handleDrop}
-          className={`flex cursor-pointer flex-col items-center justify-center gap-1 rounded-sm border border-dashed px-3 py-6 text-center text-sm transition-colors ${
+          className={`flex cursor-pointer flex-col items-center justify-center gap-1 rounded-md border border-dashed px-3 py-6 text-center text-sm transition-colors ${
             dragOver ? 'border-brand-500 bg-brand-50' : 'border-slate-300 bg-white'
           } ${disabled ? 'cursor-not-allowed opacity-60' : ''}`}
         >

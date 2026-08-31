@@ -9,7 +9,7 @@ interface TrendChartProps {
 
 export function TrendChart({ title, subtitle, data }: TrendChartProps) {
   return (
-    <div className="rounded-md border border-slate-200 bg-white p-3.5">
+    <div className="rounded-xl border border-slate-200 bg-white shadow-sm p-4">
       <h3 className="text-sm font-semibold text-slate-900">{title}</h3>
       {subtitle && <p className="mt-0.5 text-xs text-slate-500">{subtitle}</p>}
       <div className="mt-4 h-56">

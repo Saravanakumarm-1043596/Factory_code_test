@@ -1,19 +1,20 @@
-/* Design theme for this project: Stately, authoritative academic health system -- cherry accent on neutral structure. (source: static) */
+/* Design theme for this project: Clinical, security-focused admin dashboard with a healthcare-grade green palette conveying compliance confidence and operational clarity. (source: llm) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand-50: #fdecef;
-  --color-brand-100: #f9ccd4;
-  --color-brand-200: #f09aa9;
-  --color-brand-300: #e5677e;
-  --color-brand-400: #d93a57;
-  --color-brand-500: #c8102e;
-  --color-brand-600: #a80e28;
-  --color-brand-700: #8a0b20;
-  --color-brand-800: #6e0a1a;
-  --color-brand-900: #50060f;
-  --font-sans: 'Helvetica', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  --font-heading: 'Helvetica', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --color-brand-50: #eef7f3;
+  --color-brand-100: #d5ece2;
+  --color-brand-200: #aed9c7;
+  --color-brand-300: #7ec1a7;
+  --color-brand-400: #52a585;
+  --color-brand-500: #2e8a6a;
+  --color-brand-600: #236e54;
+  --color-brand-700: #1c5844;
+  --color-brand-800: #174636;
+  --color-brand-900: #11352a;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-heading: 'Space Grotesk', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 html, body, #root {

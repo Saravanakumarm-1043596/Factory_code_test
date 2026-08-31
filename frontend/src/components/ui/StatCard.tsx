@@ -35,8 +35,8 @@ export function StatCard({ label, value, icon: Icon, hint, to, bare }: StatCardP
   // `bare` drops the card chrome so several can sit inside one divided
   // panel (the home page) instead of reading as a row of separate cards.
   const shell = bare
-    ? 'group relative flex h-full flex-col overflow-hidden p-3.5'
-    : 'group relative flex flex-col overflow-hidden rounded-md border border-slate-200 bg-white p-3.5';
+    ? 'group relative flex h-full flex-col overflow-hidden p-4'
+    : 'group relative flex flex-col overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm p-4';
   if (!to) return <div className={shell}>{body}</div>;
   return (
     <Link to={to} className={`${shell} transition-colors hover:border-brand-300 hover:bg-brand-50/40`}>

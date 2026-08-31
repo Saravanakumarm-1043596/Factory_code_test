@@ -15,7 +15,7 @@ export function SearchInput({ value, onChange, placeholder = 'Search...' }: Sear
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
-        className="block w-full rounded-sm border-0 py-2 pl-9 pr-3 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-brand-600"
+        className="block w-full rounded-md border-0 py-2 pl-9 pr-3 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-brand-600"
       />
     </div>
   );

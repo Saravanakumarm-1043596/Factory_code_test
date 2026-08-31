@@ -22,7 +22,7 @@ function FieldShell({ label, htmlFor, required, error, children }: FieldShellPro
 }
 
 const inputClasses =
-  'block w-full rounded-sm border-0 px-3 py-2 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-brand-600 disabled:bg-slate-50 disabled:text-slate-500';
+  'block w-full rounded-md border-0 px-3 py-2 text-sm text-slate-900 shadow-sm ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-brand-600 disabled:bg-slate-50 disabled:text-slate-500';
 
 interface BaseFieldProps {
   name: string;

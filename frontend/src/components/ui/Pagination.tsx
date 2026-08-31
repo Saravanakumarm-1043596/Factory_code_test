@@ -23,7 +23,7 @@ export function Pagination({ page, pageCount, totalItems, pageSize, onPageChange
         <button
           onClick={() => onPageChange(Math.max(1, page - 1))}
           disabled={page <= 1}
-          className="inline-flex items-center rounded-sm p-1.5 text-slate-500 hover:bg-slate-100 disabled:opacity-40"
+          className="inline-flex items-center rounded-md p-1.5 text-slate-500 hover:bg-slate-100 disabled:opacity-40"
           aria-label="Previous page"
         >
           <ChevronLeftIcon className="h-4 w-4" />
@@ -34,7 +34,7 @@ export function Pagination({ page, pageCount, totalItems, pageSize, onPageChange
         <button
           onClick={() => onPageChange(Math.min(pageCount, page + 1))}
           disabled={page >= pageCount}
-          className="inline-flex items-center rounded-sm p-1.5 text-slate-500 hover:bg-slate-100 disabled:opacity-40"
+          className="inline-flex items-center rounded-md p-1.5 text-slate-500 hover:bg-slate-100 disabled:opacity-40"
           aria-label="Next page"
         >
           <ChevronRightIcon className="h-4 w-4" />
