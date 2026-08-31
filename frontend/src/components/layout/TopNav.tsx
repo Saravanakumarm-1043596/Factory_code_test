@@ -1,23 +1,23 @@
 import { NavLink } from 'react-router-dom';
-import { Home as HomeIcon, Boxes as BoxesIcon, Building2 as Building2Icon, ClipboardList as ClipboardListIcon, Database as DatabaseIcon, FileText as FileTextIcon, Layers as LayersIcon, Tag as TagIcon, Users as UsersIcon, ShieldCheck as ShieldCheckIcon } from 'lucide-react';
+import { Home as HomeIcon, Boxes as BoxesIcon, Building2 as Building2Icon, ClipboardList as ClipboardListIcon, Database as DatabaseIcon, FileText as FileTextIcon, Layers as LayersIcon, Tag as TagIcon, Users as UsersIcon, Stethoscope as StethoscopeIcon } from 'lucide-react';
 import clsx from 'clsx';
 
-const APP_TITLE = "Lab Test Workbench";
+const APP_TITLE = "Horizon Care Network";
 
 const NAV_ITEMS = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
-  { to: '/lab-test-orders', label: "Lab Test Orders", icon: UsersIcon },
-  { to: '/lab-test-lines', label: "Lab Test Results", icon: DatabaseIcon },
-  { to: '/claims', label: "Claims", icon: LayersIcon },
-  { to: '/claim-lines', label: "Claim Lines", icon: ClipboardListIcon },
-  { to: '/claim-errors', label: "Claim Errors", icon: BoxesIcon },
-  { to: '/members', label: "Members", icon: FileTextIcon },
-  { to: '/providers', label: "Providers", icon: Building2Icon },
-  { to: '/phi-access-logs', label: "PHI Access Log", icon: TagIcon },
-  { to: '/compliance-controls', label: "Compliance Controls", icon: UsersIcon },
-  { to: '/compliance-findings', label: "Compliance Findings", icon: DatabaseIcon },
-  { to: '/line-of-businesses', label: "Lines of Business", icon: LayersIcon },
-  { to: '/users', label: "Users", icon: ClipboardListIcon },
+  { to: '/appointments', label: "Appointments", icon: UsersIcon },
+  { to: '/patients', label: "Patients", icon: DatabaseIcon },
+  { to: '/schedule-slots', label: "Schedule Slots", icon: LayersIcon },
+  { to: '/patient-engagements', label: "Patient Engagement", icon: ClipboardListIcon },
+  { to: '/clinicians', label: "Clinicians", icon: BoxesIcon },
+  { to: '/facilities', label: "Facilities", icon: FileTextIcon },
+  { to: '/predictive-models', label: "Predictive Models", icon: Building2Icon },
+  { to: '/breach-incidents', label: "Breach Incidents", icon: TagIcon },
+  { to: '/phiaccess-logs', label: "PHI Access Logs", icon: UsersIcon },
+  { to: '/consent-records', label: "Consent Records", icon: DatabaseIcon },
+  { to: '/ehrintegration-events', label: "EHR Integration Events", icon: LayersIcon },
+  { to: '/app-users', label: "Users", icon: ClipboardListIcon },
 ];
 
 interface TopNavProps {
@@ -29,10 +29,10 @@ export function TopNav({ projectName }: TopNavProps) {
     <header className="sticky top-0 z-30 flex h-16 flex-none items-center gap-6 border-b border-slate-200 bg-white px-6 shadow-sm">
       <div className="flex w-56 flex-none items-center gap-2">
         <span className="flex h-9 w-9 flex-none items-center justify-center rounded-lg bg-brand-50 text-brand-600">
-          <ShieldCheckIcon className="h-5 w-5" />
+          <StethoscopeIcon className="h-5 w-5" />
         </span>
         <span className="flex min-w-0 flex-col leading-tight">
-          <span className="truncate text-sm font-semibold tracking-wide text-slate-900">Payer Portal</span>
+          <span className="truncate text-sm font-semibold tracking-wide text-slate-900">Care Provider</span>
           <span className="truncate text-[11px] font-medium text-slate-500" title={projectName}>
             {APP_TITLE}
           </span>

@@ -18,8 +18,11 @@ STORAGE_DIR = Path(os.getenv("STORAGE_DIR", "./uploads"))
 
 # "<entity_snake>.<field_name>" -> (allowed extensions, max size in MB)
 _UPLOAD_LIMITS: dict[str, tuple[list[str], float]] = {
-    "compliance_control.evidence_document": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
-    "compliance_finding.evidence_attachment": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
+    "patient.consent_document": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
+    "predictive_model.model_artifact": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
+    "breach_incident.supporting_document": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
+    "ehrintegration_event.payload_file": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
+    "consent_record.consent_document": (['.pdf', '.jpg', '.jpeg', '.png'], 10.0),
 }
 
 _DEFAULT_LIMIT: tuple[list[str], float] = (['.pdf', '.jpg', '.jpeg', '.png'], 10.0)
